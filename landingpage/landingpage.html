@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landingspage</title>
+    <link rel="stylesheet" href="./landingspage.css">
+    <script src="./landingspage.js" defer></script>
+</head>
+
+<body id="js--body">
+    <header class="header">
+        <h1 class="headerTitle">Super mario galaxy</h1>
+
+
+        <button id="js--menu" class="headerButton">Menu</button>
+    </header>
+    <!--
+    <nav id="js--nav" class="mainNavigation">
+        <ul class="mainNavigationList">
+            <li class="mainNavigationListItem"><a href="">Home</a></li>
+            <li class="mainNavigationListItem"><a href="">Collection #1</a></li>
+            <li class="mainNavigationListItem"><a href="">Collection #2</a></li>
+            <li class="mainNavigationListItem"><a href="">Collection #3</a></li>
+        </ul>
+    </nav>
+-->
+    <nav role="navigation">
+        <div id="menuToggle">
+            <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+            <input type="checkbox" id="menuCheckbox" />
+
+            <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+            <ul id="menu">
+                <!-- 
+        We can use a label here to close upon click (when doing same page navigation), this
+        does require a slight bit of JS.
+        -->
+                <li>
+                    <a href="#">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
+                    </a>
+                </li>
+
+                <!-- These just close the menu -->
+                <li><label for="menuCheckbox"><a>Info</a></label></li>
+                <li><label for="menuCheckbox"><a>Contact</a></label></li>
+
+                <!-- Or just use regular URLs -->
+                <li>
+                    <a href="https://erikterwan.com/" target="_blank">Show me more</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+
+        <figure class="bigFigure"><img
+                src="../img/desktop-wallpapers-for-people-that-keep-their-shortcuts-on-v0-ip3vfvl6qgmc1.webp" alt="">
+        </figure>
+
+        <section class="collections">
+            <h2 class="collectionsTitle">collections</h2>
+
+            <ul class="collectionsList">
+                <li class="collectionsListItem"> <img src="../img/images (1).jpg" alt=""></li>
+                <li class="collectionsListItem"><img src="../img/images (2).jpg" alt=""></li>
+                <li class="collectionsListItem"><img src="../img/images.jpg" alt=""></li>
+                <li class="collectionsListItem"><img src="../img/gameplay-4.jpg" alt=""></li>
+                <li class="collectionsListItem"><img src="../img/level-5.webp" alt=""></li>
+                <li class="collectionsListItem"><img src="../img/level-6.jpg" alt=""></li>
+            </ul>
+        </section>
+        <section class="info">
+            <div class="block">
+                <h2 class="infoTitle">waarom mario galaxy?</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque enim, harum beatae recusandae
+                    veritatis mollitia optio assumenda fuga consectetur quam sapiente hic dolore magnam quidem sed
+                    officia, eos magni dolorum.
+                    Alias iure maxime dolores voluptas corrupti delectus vero, vel officia ab, doloribus qui repellat
+                    eos consequatur beatae numquam totam commodi animi. Error sit magnam vero nihil exercitationem!
+                    Molestias, totam maxime.
+                    Doloribus porro iusto distinctio sapiente nulla quia veniam omnis. Asperiores illo aperiam rerum
+                    tempora impedit tenetur dicta, doloremque, repellendus facilis mollitia dignissimos. Eligendi optio
+                    soluta magni tenetur unde aut eveniet?
+                    Recusandae, suscipit totam voluptatem debitis autem veniam vel necessitatibus nesciunt culpa magni
+                    tempore aut ullam consequatur numquam reiciendis explicabo, obcaecati laboriosam officia earum!
+                    Reprehenderit, laboriosam. Nulla dignissimos facere deserunt ipsam.
+                    Provident temporibus hic impedit aliquid explicabo nihil excepturi commodi dolorem. Veniam tempore
+                    optio a accusamus rem odio itaque saepe, molestias ex dolore sequi perferendis beatae ipsa eaque,
+                    explicabo, fuga facere!</p>
+            </div>
+            <div class="block">
+                <h2 class="infoTitle">beste 3d mario game?</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis amet itaque, non impedit
+                    nobis. Illo eum labore delectus quibusdam enim neque, sed magni amet id, aliquid, dignissimos
+                    voluptatem cumque?
+                    Aspernatur, eius? Dignissimos dolores repellendus pariatur, laborum ad provident est distinctio
+                    ratione modi vitae harum sit rem. Perferendis saepe ab doloribus earum commodi adipisci maiores
+                    quasi? Tempora porro amet officia.
+                    Dolorem cum ipsa harum hic impedit cupiditate asperiores eos rem laudantium quia minus provident
+                    iste, illum, pariatur, officia quae amet. Ab eligendi nihil doloribus quo accusantium tempore ea
+                    omnis totam?
+                    Facilis voluptate voluptatum earum. Nostrum incidunt impedit accusamus laborum veniam fugit, sequi
+                    corrupti voluptates. Quidem sapiente illo maxime porro, quia blanditiis ea numquam exercitationem
+                    nihil dolor deserunt, at, earum ducimus?
+                    Libero cum nemo impedit ullam, inventore ducimus voluptatum illum corporis consequatur, veniam nisi
+                    quis similique veritatis commodi nihil. Libero voluptatum qui adipisci expedita earum reprehenderit
+                    hic sed id eius officiis.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer> 
+              <img src="../img/downloads.png" alt=""class="socialmedia">
+             <img src="../img/twitter.png" alt="" class="socialmedia">
+             <img src="../img/facebook.png" alt="" class="socialmedia">
+        
+        Daan Plankman
+    </footer>
+
+
+
+</body>
+
+</html>
